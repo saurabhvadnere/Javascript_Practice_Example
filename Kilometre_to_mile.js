@@ -1,5 +1,3 @@
-```
-javascript
 // taking miles input from the user
 let Miles = 10;
 
@@ -10,4 +8,4 @@ const factor = 1.6;
 let Kilometers = Miles * factor
 
 console.log(`${Miles} miles is equal to ${Kilometers} Kilometers.`)
-```
+
