@@ -1,10 +1,10 @@
 // take the input from the user
 // const number = prompt('Enter the number: '); // Prompt is not working in VS Code
 
-const number = 25;
+const Number = 25;
 
-const result = Math.sqrt(number);
-console.log(`The square root of ${number} is ${result}`);
+const result = Math.sqrt(Number);
+console.log(`The square root of ${Number} is ${result}`);
 //Here, the Math.sqrt() method takes a number and returns its square root.
 
 
