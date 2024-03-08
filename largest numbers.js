@@ -17,7 +17,6 @@ console.log("The large number is",largest)
 
 
 //Example 2
-
 // take input from the user
 const number1 = 55;
 const number2 = 63;
