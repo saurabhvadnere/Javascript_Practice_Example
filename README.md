@@ -369,6 +369,57 @@ const string ="Hello World!!!";
 const result = reverseString(string);
 console.log(result);
 ```
+## convert first letter of a string to uppercase
+```
+javascript
+// program to convert first letter of a string to uppercase
+function capitalizeFirstLetter(str) {
 
+    // converting first letter to uppercase
+
+    const capital = str.charAt(0).toUpperCase() + str.slice(1);
+
+    return capital;
+}
+
+// take input
+const string = "javascript";
+
+const result = capitalizeFirstLetter(string);
+
+console.log(result);
+```
+
+## Average of number
+```javascript
+function average(array) {
+    let total = 0;
+    for(let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return (total / array.length);
+}
+
+let number = [72,80,90,98,100];
+const result = average(number); 
+console.log( result ); // 88
+```
+
+## sum of only even number
+``` javascript
+// find the sum of only even number 
+function sum (array){
+    let total = 0;
+      for(i=0; i<array.length; i++){
+        if (array[i]%2===0){
+          total = total + array[i];
+        }
+      }
+      return total;
+  }
+  let number = [1,2,3,4,5,6,7,8,9];
+  const result = sum(number);
+  console.log(result)
+```
 
 
