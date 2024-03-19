@@ -422,4 +422,116 @@ function sum (array){
   console.log(result)
 ```
 
+## Remove a Property From an Object
+```javascript
+// program to remove a property from an object
+
+// creating an object
+const student = { 
+    name: 'Sam',
+    hobbies: ['reading', 'games', 'coding'],
+    age: 24,
+    score: {
+        maths: 90,
+        science: 80
+    },
+    greet: function() {
+        console.log('Hello everyone.');
+    }
+    
+};
+
+// deleting a property from an object
+delete student.greet; // using DOT Notation
+delete student['score']; // using Bracket Notation
+
+console.log(student);
+```
+
+## Check if a Key Exists in an Object
+```javascript
+// Example 1: Check if Key Exists in Object Using in Operator
+
+// program to check if a key exists
+
+const person = {
+    id: 1,
+    name: 'Sam',
+    age: 23
+}
+
+// check if key exists
+const hasKey = 'name' in person;
+
+if(hasKey) {
+    console.log('The key exists.');
+}
+else {
+    console.log('The key does not exist.');
+}
+
+
+// Example 2: Check if Key Exists in Object Using hasOwnProperty()
+// program to check if a key exists
+
+const persons = {
+    id: 1,
+    name: 'Tom',
+    age: 23
+}
+
+//check if key exists
+const hasKeys = persons.hasOwnProperty('name');
+
+if(hasKeys) {
+    console.log('The key exists.');
+}
+else {
+    console.log('The key does not exist.');
+}```
+
+## cloning the object
+```javascript
+// Example 1. Clone the Object Using Object.assign()
+// program to clone the object
+
+// declaring object
+const person = {
+    name: 'Aryan',
+    age: 25,
+}
+
+// cloning the object
+const clonePerson = Object.assign({}, person);
+
+console.log(clonePerson);
+
+// changing the value of clonePerson
+clonePerson.name = 'David';
+
+console.log(clonePerson.name);
+console.log(person.name);
+
+
+// Example 2: Clone the Object Using Spread Syntax
+// program to clone the object
+
+// declaring object
+const persons = {
+    name: 'Saurabh',
+    age: 24,
+}
+
+// cloning the object
+const clonePersons = { ... persons}
+
+console.log(clonePersons);
+
+// changing the value of clonePerson
+clonePersons.name = 'Miller';
+
+console.log(clonePersons.name);
+console.log(persons.name);
+```
+
 
