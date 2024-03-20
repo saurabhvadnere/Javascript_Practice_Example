@@ -534,4 +534,70 @@ console.log(clonePersons.name);
 console.log(persons.name);
 ```
 
+## program to add a key/value pair to an object
+```javascript
+// Example 1: Using Dot Notation
+
+const person = {
+    name: 'Marena',
+    age: 22,
+    gender: 'female'
+}
+
+// add a key/value pair
+person.height = 5.4;
+
+console.log(person);
+
+// Example 2: Using Square Bracket Notation
+
+const persons = {
+    name: 'Saurabh',
+    age: 24,
+    gender: 'male'
+}
+
+// add a key/value pair
+persons['height'] = 5.8;
+
+console.log(persons);
+```
+
+## program to merge property of two objects
+```javascript
+// Example 1
+
+// object 1
+const Student1 = {
+    name: 'Saurabh',
+    age:26
+}
+
+// object 2
+const Student2 = {
+    gender: 'male',
+    age:28
+}
+
+// merge two objects
+const newObj = Object.assign(Student1, Student2);
+
+console.log(newObj);
+console.log(newObj===Student1);
+
+
+// Example Two
+
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+
+console.log(target);
+// Expected output: Object { a: 1, b: 4, c: 5 }
+
+console.log(returnedTarget === target);
+// Expected output: true
+```
+
 
